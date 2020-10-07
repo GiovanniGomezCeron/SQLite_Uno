@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".update_item">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="26sp"
+        app:fontFamily="@font/carter_one" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CODIGO"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        app:fontFamily="@font/carter_one" />
+
+    <EditText
+        android:id="@+id/id_new"
+        style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DESCRIPCION"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        app:fontFamily="@font/carter_one" />
+
+    <EditText
+        android:id="@+id/des_new"
+        style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PRECIO"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        app:fontFamily="@font/carter_one" />
+
+    <EditText
+        android:id="@+id/price_new"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:background="@color/design_default_color_error"
+        android:onClick="actualizar"
+        android:text="ACTUALIZAR"
+        android:textColor="#F44336"
+        android:textSize="20sp" />
+
+</LinearLayout>
